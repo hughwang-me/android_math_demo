@@ -27,8 +27,10 @@ public class MainActivity extends AppCompatActivity {
         Tokenizer.setColorEndLabels("</span>");
         Tokenizer.setBoldStartLabels("<strong>", "[strong]");
         Tokenizer.setBoldEndLabels("</strong>", "[/strong]");
+        Tokenizer.setTitleStartLabels("<p>");
+        Tokenizer.setTitleEndLabels("</p>");
 
-        textView.setText("<img height=200 width=100>https://wx4.sinaimg.cn/mw690/6204ece1ly1gdrycnc8ppj204x06wt8k.jpg</img> 比较大小：\\[{{x}^{2}}\\]+4x-3          6x-4  <strong><span style=\"color:#f32784\">hello</span></strong></p >");
+        textView.setText("<img height=200 width=100>https://wx4.sinaimg.cn/mw690/6204ece1ly1gdrycnc8ppj204x06wt8k.jpg</img> 比较大小：\\[{{x}^{2}}\\]+4x-3       6x-4 <p><strong><span style=\"color:#f32784\">hello2 world</span></strong></p>");
 //        flexibleRichTextView.setText("已知集合\\(A=\\{-1,1\\}\\)，\\(B=\\{x|mx=1\\}\\)，且\\(A\\cup B=A\\)，则\\(m\\)的值为________");
 
     }
