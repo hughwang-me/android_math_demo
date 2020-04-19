@@ -21,8 +21,9 @@ public class K12Application extends Application {
 
         //init flexiblerichtextview
         AjLatexMath.init(this);
+//        AjLatexMath.
         //code highlight
-        CodeProcessor.init(this);
+//        CodeProcessor.init(this);
     }
 
 }
