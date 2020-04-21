@@ -22,7 +22,8 @@ public class MainActivity extends AppCompatActivity {
 
     @SuppressLint("SetJavaScriptEnabled")
     public  void show(){
-        Tokenizer.setImageLabels("<img height=\\h width=\\w>\\u</img>");
+        Tokenizer.setImageLabels("<img height=\\h width=\\w>\\u}");
+//        Tokenizer.setImageLabels("<img height=\\h width=\\w>\\u}");
         Tokenizer.setColorStartLabel("<span style=\"color:\\s\">");
         Tokenizer.setColorEndLabels("</span>");
         Tokenizer.setBoldStartLabels("<strong>", "[strong]");
@@ -35,11 +36,17 @@ public class MainActivity extends AppCompatActivity {
 //        textView.setText("已知函数$f(x)=\\left\\{ \\begin{align}  & {{x}^{2}}+\\sin x{{,}_{{}}}x\\ge 0 \\\\  & -{{x}^{2}}+\\cos (x+\\alpha ){{,}_{{}}}x<0 \\\\ \\end{align} \\right.$ 是奇函数，则$\\alpha =$（    ）（10分）");
 
 //        textView.setText("<p>（崇明区2017二模1）<strong><span style=\"color:#f32784\">函数</span></strong>$y=1-2{{\\sin }^{2}}(2x)$的<strong>最小正周期是</strong>．</p >（4分）");
-//        textView.setText("<img height=200 width=100>https://wx4.sinaimg.cn/mw690/6204ece1ly1gdrycnc8ppj204x06wt8k.jpg</img> 比较大小：\\[{{x}^{2}}\\]+4x-3       6x-4 <p><strong><span style=\"color:#f32784\">hello2 world</span></strong></p>");
+//        textView.setText("#{https://uwjx-dev.oss-cn-hangzhou.aliyuncs.com/tskj/0039d51f-fe50-4082-a593-e42112956158.jpg} 比较大小：\\[{{x}^{2}}\\]+4x-3       6x-4 <p><strong><span style=\"color:#f32784\">hello2 world</span></strong></p>");
 //        flexibleRichTextView.setText("已知集合\\(A=\\{-1,1\\}\\)，\\(B=\\{x|mx=1\\}\\)，且\\(A\\cup B=A\\)，则\\(m\\)的值为________");
 
 //        t1();
-        t2();
+//        t2();
+        t3();
+    }
+
+    public void t3(){
+        String text = "<p>(1)${{a}_{n}}=2+3n$(2)${{S}_{n}}=3\\times {{2}^{n+1}}+2n-6$(3)当$n=1,2,3$<u>时</u>，${{S}_{n}}&lt;{{G}_{n}}$；<em><span style=\"color:#07a9fe\">当</span></em>$n\\ge 4$<u><em><strong><span style=\"color:#d35400\">时</span></strong></em></u>，${{S}_{n}}&gt;{{G}_{n}}$。#{https://uwjx-dev.oss-cn-hangzhou.aliyuncs.com/tskj/0039d51f-fe50-4082-a593-e42112956158.jpg}</p >";
+        textView.setText(text);
     }
 
     public void t2(){
