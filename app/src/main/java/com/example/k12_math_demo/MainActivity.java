@@ -22,8 +22,8 @@ public class MainActivity extends AppCompatActivity {
 
     @SuppressLint("SetJavaScriptEnabled")
     public  void show(){
-        Tokenizer.setImageLabels("<img height=\\h width=\\w>\\u}");
-//        Tokenizer.setImageLabels("<img height=\\h width=\\w>\\u}");
+        Tokenizer.setImageLabels("[img height=\\h width=\\w]\\u>[/img]" , "[img]\\u[/img]");
+//        Tokenizer.setImageLabels("#{\\u}");
         Tokenizer.setColorStartLabel("<span style=\"color:\\s\">");
         Tokenizer.setColorEndLabels("</span>");
         Tokenizer.setBoldStartLabels("<strong>", "[strong]");
@@ -46,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void t3(){
         String text = "<p>(1)${{a}_{n}}=2+3n$(2)${{S}_{n}}=3\\times {{2}^{n+1}}+2n-6$(3)当$n=1,2,3$<u>时</u>，${{S}_{n}}&lt;{{G}_{n}}$；<em><span style=\"color:#07a9fe\">当</span></em>$n\\ge 4$<u><em><strong><span style=\"color:#d35400\">时</span></strong></em></u>，${{S}_{n}}&gt;{{G}_{n}}$。#{https://uwjx-dev.oss-cn-hangzhou.aliyuncs.com/tskj/0039d51f-fe50-4082-a593-e42112956158.jpg}</p >";
+        text = text.replaceAll("#\\{(http[\\s\\S]*?\\.(jpe?g|bmp|png))\\}", "[img]$1[/img]");
         textView.setText(text);
     }
 
