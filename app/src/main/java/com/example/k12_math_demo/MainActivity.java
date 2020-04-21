@@ -28,8 +28,8 @@ public class MainActivity extends AppCompatActivity {
         Tokenizer.setColorEndLabels("</span>");
         Tokenizer.setBoldStartLabels("<strong>", "[strong]");
         Tokenizer.setBoldEndLabels("</strong>", "[/strong]");
-        Tokenizer.setTitleStartLabels("<p>");
-        Tokenizer.setTitleEndLabels("</p>" ,"</p >");
+        Tokenizer.setTitleStartLabels("<p>" , "<u>" , "<em>");
+        Tokenizer.setTitleEndLabels("</p>" ,"</p >" , "</u>" , "</em>");
 
 //        textView.setText("已知函数$f(x)=\\left\\{ \\begin{align}  & {{x}^{2}}+\\sin x{{,}_{{}}}x\\ge 0 \\\\  & -{{x}^{2}}+\\cos (x+\\alpha ){{,}_{{}}}x<0 \\\\ \\end{align} \\right.$$(\\alpha \\in [0,2\\pi ))$是奇函数，则$\\alpha =$（    ）（10分）");
 
