@@ -41,7 +41,17 @@ public class MainActivity extends AppCompatActivity {
 
 //        t1();
 //        t2();
-        t3();
+//        t3();
+        t4();
+    }
+
+    public void t4(){
+        String text = "$0\\le x\\le 2\\Rightarrow $$f(x)$的定义域为$\\left[ 1,3 \\right]$$\\Rightarrow 1\\le {{x}^{2}}-2\\le 3\\Rightarrow x\\in \\left[ -\\sqrt{5},-\\sqrt{3} \\right]\\cup \\left[ \\sqrt{3},\\sqrt{5} \\right]$$0\\le x\\le 2\\Rightarrow $$f(x)$的定义域为$\\left[ 1,3 \\right]$$\\Rightarrow 1\\le {{x}^{2}}-2\\le 3\\Rightarrow x\\in \\left[ -\\sqrt{5},-\\sqrt{3} \\right]\\cup \\left[ \\sqrt{3},\\sqrt{5} \\right]$";
+//        text = text.replaceAll("\\\\left" , "");
+//        text = text.replaceAll("\\\\right" , "");
+//
+//        text = "$0\\le x\\le 2\\Rightarrow $$f(x)$的定义域为$\\left[ 1,3 \\right]$$\\Rightarrow 1\\le {{x}^{2}}-2\\le 3\\Rightarrow x\\in \\left[ -\\sqrt{5},-\\sqrt{3} \\right]\\cup \\left[ \\sqrt{3},\\sqrt{5} \\right]$";
+        textView.setText(text);
     }
 
     public void t3(){
